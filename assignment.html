@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post your item</title>
+    <link rel="stylesheet"href="css/layout.css">
+</head>
+<body>
+    <div class="container">
+   <div class="form-container">
+    <h1>Post Lost or Found Item</h1>
+    <form action="#" method="POST" enctype="multipart/form-data">
+     <h2><label for="item-name">Item-Name</label></h2>
+      <input type="text" id="item-name" name="item-name"placeholder="school i.d card" required />
+
+      <h2><label for="date">Date Lost/Found</label></h2>
+      <input type="date" id="date" name="date" required />
+
+     <h2><label for="location">Location</label></h2>
+      <input type="text" id="location" name="location"placeholder="1b,oba olubegi avenu,bodija" required />
+
+     <h2> <label for="category">Category</label></h2>
+      <select id="category" name="category" required>
+        <option value="">Select category</option>
+        <option value="lost">Lost</option>
+        <option value="found">Found</option>
+      </select>
+
+     <h2> <label for="description">Description</label></h2>
+       <textarea id="description"name="description"rows="3" placeholder="Describe your item" required></textarea>
+
+     <h2> <label for="contact">Contact Information</label></h2>
+      <input type="text" id="contact" name="contact" placeholder="Phone or Email" required />
+
+      <h2><label for="image">Upload Image</label></h2>
+      <input type="file" id="image" name="image" accept="image/*" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
+ 
